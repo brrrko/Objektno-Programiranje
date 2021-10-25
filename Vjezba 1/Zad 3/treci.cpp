@@ -31,7 +31,6 @@ struct Matrix{
 
     void input()
     {
-        // matrix initialization 
 
         initialize_m();
 
@@ -39,7 +38,6 @@ struct Matrix{
         {
             for(int j = 0; j < cols; j++)
             {
-               // cout << "[" << i << "]" << "[" << j << "]";
 
                 cout << i << ". row, " << j << ". column: ";
                 cin >> mtrx[i][j];
