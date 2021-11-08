@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1584998234 source:c:\users\bfili\onedrive\dokumenti\github\objektno-programiranje\vježba 3\vježba3\zad1.cpp
+	<iostream>
+	<vector>
+	<algorithm>
+
