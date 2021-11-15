@@ -5,20 +5,20 @@
 
 using namespace std;
 
-void initialize_and_input(vector<int> &my_vect, size_t *size, int *capacity)
-{
+void initialize_and_input(vector<int> &my_vect, size_t *size, int *capacity){
     int inp;
 
-    if(*size == 0)
+    if(*size == 0){
         my_vect.reserve(1);
+    }
 
     else{
         *capacity *= *size * 2;
         
         my_vect.reserve(*capacity);
         
-        for(int i = 0; i < *size; i++)
-        {
+        for(int i = 0; i < *size; i++){
+            
             cout << i + 1 << ". elem: ";
             cin >> inp;
             my_vect.push_back(inp);
@@ -28,21 +28,22 @@ void initialize_and_input(vector<int> &my_vect, size_t *size, int *capacity)
 }
 
 
-void output(const vector<int> &my_vect)
-{
-    for (int i = 0; i < my_vect.size(); i++)
+void output(const vector<int> &my_vect){
+    
+    for (int i = 0; i < my_vect.size(); i++){
        cout << my_vect[i] << " ";
+    }
     cout << endl;
 }
 
 
-void range_input(vector<int> &my_vect, int *capacity, int start, int stop)
-{
+void range_input(vector<int> &my_vect, int *capacity, int start, int stop){
+    
     int v_size = 0;
 
     *capacity = 1;
 
-    cout << "Input vector size: ";
+    cout << "Vector size: ";
     cin >> v_size;
 
     int *temp, cnt = 0;
